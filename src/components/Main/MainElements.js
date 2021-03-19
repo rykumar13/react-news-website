@@ -44,7 +44,6 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledBox = styled.div`
-word-wrap: break-word;
   border-radius: 5px;
   border-color: #990000;
   font-size: 100%;
@@ -54,6 +53,9 @@ word-wrap: break-word;
     transform: scale(1.1);
     transition-duration: 0.3s;
   }
+
+  text-decoration: none;
+
 `;
 
 export const StyledImg = styled.img`
@@ -63,8 +65,6 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledName = styled.h6`
-  text-decoration: none;
-  white-space: nowrap;
   display: inline;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -72,16 +72,12 @@ export const StyledName = styled.h6`
 `;
 
 export const StyledBrief = styled.h6`
-  text-decoration: none;
-  white-space: nowrap;
   display: inline;
   line-height: 1.5;
   font-weight: 400;
 `;
 
 export const StyledCategory = styled.h6`
-  text-decoration: none;
-  white-space: nowrap;
   display: inline;
   font-size: 14px;
   line-height: 1.5;
@@ -89,8 +85,6 @@ export const StyledCategory = styled.h6`
 `;
 
 export const StyledWebsite = styled.h6`
-  text-decoration: none;
-  white-space: nowrap;
   display: inline;
   font-size: 14px;
   line-height: 1.5;

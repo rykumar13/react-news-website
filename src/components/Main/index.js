@@ -29,73 +29,19 @@ const Main = () => {
     <StyledContainer id="LatestHeadlines">
       <StyledTitle>Latest Headlines from New Zealand</StyledTitle>
       <StyledWrapper>
-        <StyledBox>
-          {/* <a href={currentMockData[0]["Url"]}>
-            <StyledImg
-              alt="test"
-              src={currentMockData[0]["restaurant"]["thumb"]}
-            />
-          </a> */}
-          <StyledName>{currentMockData[0]["Name"]}</StyledName>
-          <br></br>
-          <StyledBrief>{currentMockData[0]["Brief"]}</StyledBrief>
-          <br></br>
-          <StyledCategory>{currentMockData[0]["Category"]}</StyledCategory>
-          <br></br>
-          <StyledWebsite>{currentMockData[0]["Website"]}</StyledWebsite>
-        </StyledBox>
-
-        <StyledBox>
-          {/* <a href={currentMockData[0]["Url"]}>
-            <StyledImg
-              alt="test"
-              src={currentMockData[0]["restaurant"]["thumb"]}
-            />
-          </a> */}
-          <StyledName>{currentMockData[1]["Name"]}</StyledName>
-          <br></br>
-          <StyledBrief>{currentMockData[1]["Brief"]}</StyledBrief>
-          <br></br>
-          <StyledCategory>{currentMockData[1]["Category"]}</StyledCategory>
-          <br></br>
-          <StyledWebsite>{currentMockData[1]["Website"]}</StyledWebsite>
-        </StyledBox>
-
-        <StyledBox>
-          {/* <a href={currentMockData[0]["Url"]}>
-            <StyledImg
-              alt="test"
-              src={currentMockData[0]["restaurant"]["thumb"]}
-            />
-          </a> */}
-          <StyledName>{currentMockData[0]["Name"]}</StyledName>
-          <br></br>
-          <StyledBrief>{currentMockData[0]["Brief"]}</StyledBrief>
-          <br></br>
-          <StyledCategory>{currentMockData[0]["Category"]}</StyledCategory>
-          <br></br>
-          <StyledWebsite>{currentMockData[0]["Website"]}</StyledWebsite>
-        </StyledBox>
-
-        <StyledBox>
-          {/* <a href={currentMockData[0]["Url"]}>
-            <StyledImg
-              alt="test"
-              src={currentMockData[0]["restaurant"]["thumb"]}
-            />
-          </a> */}
-          <StyledName>{currentMockData[0]["Name"]}</StyledName>
-          <br></br>
-          <StyledBrief>{currentMockData[0]["Brief"]}</StyledBrief>
-          <br></br>
-          <StyledCategory>{currentMockData[0]["Category"]}</StyledCategory>
-          <br></br>
-          <StyledWebsite>{currentMockData[0]["Website"]}</StyledWebsite>
-        </StyledBox>
-        
+        {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
+          <a href={Url}>
+              <StyledBox>
+            <StyledName>{Name}</StyledName>
+            <br></br>
+            <StyledBrief>{Brief}</StyledBrief>
+            <br></br>
+            <StyledCategory>{Category} - </StyledCategory>
+            <StyledWebsite>{Website}</StyledWebsite>
+          </StyledBox>
+            </a>
+        ))}
       </StyledWrapper>
-
-      
     </StyledContainer>
   );
 };

@@ -5,7 +5,7 @@ export const StyledContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  padding: 140px 0;
+  padding: 40px 0;
   align-items: center;
 `;
 
@@ -27,35 +27,37 @@ export const StyledWrapper = styled.div`
     margin: auto:
     height: 350px;
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-gap: 30px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 10px;
 
     @media (max-width: 1200px) {
-      grid-template-columns: 250px 250px 250px;
+      grid-template-columns: 350px 350px;
     }
 
     @media (max-width: 900px) {
-      grid-template-columns: 250px 250px;
+      grid-template-columns: 500px;
     }
 
     @media (max-width: 600px) {
-      grid-template-columns: 250px;
+      grid-template-columns: 300px;
     }
 `;
 
 export const StyledBox = styled.div`
-  border-radius: 5px;
-  border-color: #990000;
+  padding: 10px 10px 10px 10px;
   font-size: 100%;
   line-height: 1.5;
+  text-decoration: none;
+`;
 
+export const StyledBoxBorder = styled.div`
+  border:1px solid black;
+  border-radius: 15px;
+  border-width: 1px;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition-duration: 0.3s;
   }
-
-  text-decoration: none;
-
 `;
 
 export const StyledImg = styled.img`
@@ -66,15 +68,13 @@ export const StyledImg = styled.img`
 
 export const StyledName = styled.h6`
   display: inline;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 600;
+  font-size: 20px;
 `;
 
 export const StyledBrief = styled.h6`
   display: inline;
-  line-height: 1.5;
   font-weight: 400;
+  font-size: 12px;
 `;
 
 export const StyledCategory = styled.h6`

@@ -10,6 +10,7 @@ import {
   StyledTitle,
   StyledWebsite,
   StyledWrapper,
+  StyledBoxBorder
 } from "./MainElements";
 
 const Main = () => {
@@ -27,19 +28,21 @@ const Main = () => {
   if (!currentMockData) return null;
   return (
     <StyledContainer id="LatestHeadlines">
-      <StyledTitle>Latest Headlines from New Zealand</StyledTitle>
+      {/* <StyledTitle>Latest Headlines from New Zealand</StyledTitle> */}
       <StyledWrapper>
         {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
-          <a href={Url}>
+          <StyledBoxBorder>
+            <a href={Url}>
               <StyledBox>
-            <StyledName>{Name}</StyledName>
-            <br></br>
-            <StyledBrief>{Brief}</StyledBrief>
-            <br></br>
-            <StyledCategory>{Category} - </StyledCategory>
-            <StyledWebsite>{Website}</StyledWebsite>
-          </StyledBox>
+                <StyledName>{Name.slice(0, 100)}...</StyledName>
+                <br></br>
+                <StyledBrief>{Brief.slice(0, 150)}</StyledBrief>
+                <br></br>
+                <StyledCategory>{Category} - </StyledCategory>
+                <StyledWebsite>{Website}</StyledWebsite>
+              </StyledBox>
             </a>
+          </StyledBoxBorder>
         ))}
       </StyledWrapper>
     </StyledContainer>

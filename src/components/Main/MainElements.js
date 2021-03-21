@@ -9,19 +9,44 @@ export const StyledContainer = styled.section`
   align-items: center;
 `;
 
-export const StyledTitle = styled.h2`
-  height: 80px;
-  font-size: 50px;
-  line-height: 1.1;
-  font-style: italic;
-  margin: 0;
-  @media (max-width: 63em) {
-    font-size: 40px;
-  }
-  @media (max-width: 48em) {
-    font-size: 30px;
-  }
+export const StyledStuff = styled.div`
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 4px
 `;
+
+export const StyledCat = styled.div`
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+`;
+
+// export const StyledTitle = styled.h2`
+//   height: 80px;
+//   font-size: 50px;
+//   line-height: 1.1;
+//   font-style: italic;
+//   margin: 0;
+//   @media (max-width: 63em) {
+//     font-size: 40px;
+//   }
+//   @media (max-width: 48em) {
+//     font-size: 30px;
+//   }
+// `;
 
 export const StyledWrapper = styled.div`
     margin: auto:
@@ -51,7 +76,7 @@ export const StyledBox = styled.div`
 `;
 
 export const StyledBoxBorder = styled.div`
-  border:1px solid black;
+  border: 1px solid black;
   border-radius: 15px;
   border-width: 1px;
   &:hover {
@@ -60,11 +85,11 @@ export const StyledBoxBorder = styled.div`
   }
 `;
 
-export const StyledImg = styled.img`
-  height: 185px;
-  width: 260px;
-  border-radius: 0.6rem;
-`;
+// export const StyledImg = styled.img`
+//   height: 185px;
+//   width: 260px;
+//   border-radius: 0.6rem;
+// `;
 
 export const StyledName = styled.h6`
   display: inline;

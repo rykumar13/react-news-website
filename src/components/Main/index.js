@@ -5,12 +5,12 @@ import {
   StyledBrief,
   StyledCategory,
   StyledContainer,
-  StyledImg,
   StyledName,
-  StyledTitle,
   StyledWebsite,
   StyledWrapper,
-  StyledBoxBorder
+  StyledBoxBorder,
+  StyledStuff,
+  StyledCat
 } from "./MainElements";
 
 const Main = () => {
@@ -34,12 +34,12 @@ const Main = () => {
           <StyledBoxBorder>
             <a href={Url}>
               <StyledBox>
-                <StyledName>{Name.slice(0, 100)}...</StyledName>
+                <StyledName>{Name}</StyledName>
                 <br></br>
-                <StyledBrief>{Brief.slice(0, 150)}</StyledBrief>
+                <StyledBrief>{Brief}</StyledBrief>
                 <br></br>
-                <StyledCategory>{Category} - </StyledCategory>
-                <StyledWebsite>{Website}</StyledWebsite>
+                  <StyledCat>{Category}</StyledCat>
+                <StyledStuff>{Website}</StyledStuff>
               </StyledBox>
             </a>
           </StyledBoxBorder>

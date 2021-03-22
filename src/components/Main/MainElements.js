@@ -19,7 +19,7 @@ export const StyledStuff = styled.div`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left: 4px
+  margin-left: 4px;
 `;
 
 export const StyledCat = styled.div`
@@ -53,7 +53,7 @@ export const StyledWrapper = styled.div`
     height: 350px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-gap: 10px;
+    grid-gap: 25px;
 
     @media (max-width: 1200px) {
       grid-template-columns: 350px 350px;
@@ -114,4 +114,23 @@ export const StyledWebsite = styled.h6`
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+`;
+
+export const Text_card = styled.div`
+padding: 10px 10px 10px 10px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0.5, 0.5);
+  text-align: center;
+  border-radius: 5px;
+`;
+
+export const Text_card_heading = styled.div`
+  background-color: #000000;
+  color: white;
+  padding: 1px 1px;
+  font-size: 15px;
+`;
+
+export const Text_box = styled.div`
+  padding: 5px;
+  border-radius: 5px;
 `;

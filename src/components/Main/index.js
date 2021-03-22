@@ -10,7 +10,10 @@ import {
   StyledWrapper,
   StyledBoxBorder,
   StyledStuff,
-  StyledCat
+  StyledCat,
+  Text_card,
+  Text_box, 
+  Text_card_heading
 } from "./MainElements";
 
 const Main = () => {
@@ -31,18 +34,26 @@ const Main = () => {
       {/* <StyledTitle>Latest Headlines from New Zealand</StyledTitle> */}
       <StyledWrapper>
         {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
-          <StyledBoxBorder>
-            <a href={Url}>
-              <StyledBox>
-                <StyledName>{Name}</StyledName>
-                <br></br>
-                <StyledBrief>{Brief}</StyledBrief>
-                <br></br>
-                  <StyledCat>{Category}</StyledCat>
-                <StyledStuff>{Website}</StyledStuff>
-              </StyledBox>
-            </a>
-          </StyledBoxBorder>
+          // <StyledBoxBorder>
+          //   <a href={Url}>
+          //     <StyledBox>
+          //       <StyledName>{Name}</StyledName>
+          //       <br></br>
+          //       <StyledBrief>{Brief}</StyledBrief>
+          //       <br></br>
+          //         <StyledCat>{Category}</StyledCat>
+          //       <StyledStuff>{Website}</StyledStuff>
+          //     </StyledBox>
+          //   </a>
+          // </StyledBoxBorder>
+          <Text_card>
+            <Text_card_heading>
+              <h1>{Name}</h1>
+            </Text_card_heading>
+            <Text_box>
+              <p>{Brief}</p>
+            </Text_box>
+          </Text_card>
         ))}
       </StyledWrapper>
     </StyledContainer>

@@ -14,36 +14,185 @@ import {
   Description,
   Cta,
   ReadMore,
+  StyledContainer,
+  StyledWrapper,
 } from "./NewsCardsElements";
 
 const NewsCard = () => {
   return (
-  <Card>
-    <ImageData>
-      <BackgroundImage />
-      <PublicationDetails>
-        <Author href="#">
-          {/* <FasFaUser /> */}
-          Rajiv Kumar
-        </Author>
-        <Date>
-          {/* <FasFaCalendarAlt /> */}
-          March 22, 2021
-        </Date>
-      </PublicationDetails>
-    </ImageData>
-    <PostData>
-      <Title>Artificial Inteligence</Title>
-      <SubTitle>This is the SubTitle</SubTitle>
-      <Description>
-      Hello this is where all the radom fucking text will go
-      </Description>
-      <Cta>
-        <ReadMore />
-      </Cta>
-    </PostData>
-  </Card>
-  )
+    <StyledContainer>
+      <StyledWrapper>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+        <Card>
+          <ImageData>
+            <BackgroundImage />
+            <PublicationDetails>
+              <Author href="#">
+                {/* <FasFaUser /> */}
+                Rajiv Kumar
+              </Author>
+              <Date>
+                {/* <FasFaCalendarAlt /> */}
+                March 22, 2021
+              </Date>
+            </PublicationDetails>
+          </ImageData>
+          <PostData>
+            <Title>
+              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
+            </Title>
+            <SubTitle>BREAKING STUFF</SubTitle>
+            <Description>
+              A key witness in the trial of convicted murderer Scott Watson has
+              died in a suspected suicide.
+            </Description>
+            <Cta>
+              <ReadMore>Read more</ReadMore>
+            </Cta>
+          </PostData>
+        </Card>
+      </StyledWrapper>
+    </StyledContainer>
+  );
 };
 
 export default NewsCard;

@@ -37,7 +37,7 @@ const Main = () => {
   }, []);
 
   if (!currentMockData) return null;
-  return (
+  return ( 
     <StyledContainer id="LatestHeadlines">
       {/* <StyledTitle>Latest Headlines from New Zealand</StyledTitle> */}
       <StyledWrapper>
@@ -72,7 +72,7 @@ const Main = () => {
               Hello this is where all the radom fucking text will go
             </Description>
             <Cta>
-              <ReadMore />
+              <ReadMore>Read more</ReadMore>
             </Cta>
           </PostData>
         </Card>

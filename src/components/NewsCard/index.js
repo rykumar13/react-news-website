@@ -1,4 +1,5 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import { getMockData as getMockDataSet } from "../../data/mock_data";
 import {
   Card,
   ImageData,
@@ -19,177 +20,49 @@ import {
 } from "./NewsCardsElements";
 
 const NewsCard = () => {
+  const [currentMockData, setMockData] = useState(null);
+
+  useEffect(() => {
+    const getMockData = async () => {
+      let mockData = await getMockDataSet();
+      if (mockData) return setMockData(mockData);
+      setMockData("no mock data found");
+    };
+    getMockData();
+  }, []);
+
+  if (!currentMockData) return null;
+
   return (
     <StyledContainer>
       <StyledWrapper>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>
-              Sounds murder witness Guy Wallace dies in suspected suicide{" "}
-            </Title>
-            <SubTitle>BREAKING STUFF</SubTitle>
-            <Description>
-              A key witness in the trial of convicted murderer Scott Watson has
-              died in a suspected suicide.
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
+        {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
+          <Card>
+            <ImageData>
+              <BackgroundImage />
+              <PublicationDetails>
+                <Author href="#">
+                  {/* Author icon goes here */}
+                  {Website}
+                </Author>
+                <Date>
+                  {/* Date icon goes here */}
+                  {"March 22"}
+                </Date>
+              </PublicationDetails>
+            </ImageData>
+            <PostData>
+              <Title>{Name}</Title>
+              <SubTitle>{Category}</SubTitle>
+              <Description>
+                {Brief}
+              </Description>
+              <Cta>
+                <ReadMore href={Url}>Read more</ReadMore>
+              </Cta>
+            </PostData>
+          </Card>
+        ))}
       </StyledWrapper>
     </StyledContainer>
   );

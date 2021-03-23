@@ -70,10 +70,10 @@ export const Author = styled.a`
   :hover {
     color: rgba(255, 255, 255, 0.75);
   }
-  @media (min-width: 600px) {
-    transform: translateY(-3rem);
-    opacity: 0;
-    transition-delay: .3s;
+  // @media (min-width: 600px) {
+  //   transform: translateY(-3rem);
+  //   opacity: 0;
+  //   transition-delay: .3s;
 }
 `;
 
@@ -81,10 +81,10 @@ export const FasFaUser = styled.i``;
 
 export const Date = styled.span`
   display: block;
-  @media (min-width: 600px) {
-    transform: translateY(3rem);
-    opacity: 0;
-    transition: all .5s .3s;
+  // @media (min-width: 600px) {
+  //   transform: translateY(3rem);
+  //   opacity: 0;
+  //   transition: all .5s .3s;
 }
 `;
 
@@ -92,12 +92,13 @@ export const FasFaCalendarAlt = styled.i``;
 
 export const PostData = styled.div`
   background-color: #fff;
-  padding: 2rem 3rem;
+  padding: 1rem 2.5rem;
   position: relative;
+  //width: 500px;
   @media (min-width: 600px) {
       ::before{
           content: "";
-          width: 3.5rem;
+          width: 3rem;
           height: 100%;
           background-color: #fff;
           position: absolute;
@@ -106,16 +107,17 @@ export const PostData = styled.div`
           z-index: 10;
           transform: skewX(-5deg);
       }
-    flex-basis: 60%;
+    flex-basis: 100%;
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
 `;
 
 export const Description = styled.p`
+  font-size: 1.5rem;
   position: relative;
   ::first-letter {
     margin-left: 1rem;
@@ -143,7 +145,7 @@ export const Cta = styled.div`
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #a2a2a2;
@@ -195,7 +197,7 @@ export const StyledWrapper = styled.div`
     margin: auto:
     height: 350px;
     display: grid;
-    //grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 500px 500px 500px;
     grid-gap: 25px;
 
     @media (max-width: 1200px) {

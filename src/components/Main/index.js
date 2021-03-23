@@ -37,11 +37,10 @@ const Main = () => {
   }, []);
 
   if (!currentMockData) return null;
-  return ( 
+  return (
     <StyledContainer id="LatestHeadlines">
-      {/* <StyledTitle>Latest Headlines from New Zealand</StyledTitle> */}
       <StyledWrapper>
-        {/* {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
+        {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
           <Text_card>
             <Text_card_heading>
               <h1>{Name}</h1>
@@ -50,7 +49,7 @@ const Main = () => {
               <p>{Brief}</p>
             </Text_box>
           </Text_card>
-        ))} */}
+        ))}
         <Card>
           <ImageData>
             <BackgroundImage />

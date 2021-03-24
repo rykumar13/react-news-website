@@ -50,31 +50,6 @@ const Main = () => {
             </Text_box>
           </Text_card>
         ))}
-        <Card>
-          <ImageData>
-            <BackgroundImage />
-            <PublicationDetails>
-              <Author href="#">
-                {/* <FasFaUser /> */}
-                Rajiv Kumar
-              </Author>
-              <Date>
-                {/* <FasFaCalendarAlt /> */}
-                March 22, 2021
-              </Date>
-            </PublicationDetails>
-          </ImageData>
-          <PostData>
-            <Title>Artificial Inteligence</Title>
-            <SubTitle>This is the SubTitle</SubTitle>
-            <Description>
-              Hello this is where all the radom fucking text will go
-            </Description>
-            <Cta>
-              <ReadMore>Read more</ReadMore>
-            </Cta>
-          </PostData>
-        </Card>
       </StyledWrapper>
     </StyledContainer>
   );

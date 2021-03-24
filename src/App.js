@@ -8,7 +8,7 @@ import NewsCard from './components/NewsCard';
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <Main /> */}
       <NewsCard />
     </Router>

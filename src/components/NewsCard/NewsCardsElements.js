@@ -5,8 +5,8 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
-
+  // box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 1px rgb(0 0 0 / 15%);
   @media (min-width: 600px) {
     flex-direction: row;
     max-width: 75rem;
@@ -91,7 +91,7 @@ export const Date = styled.span`
 export const FasFaCalendarAlt = styled.i``;
 
 export const PostData = styled.div`
-  background-color: #fff;
+  // background-color: #fff;
   padding: 1rem 2.5rem;
   position: relative;
   //width: 500px;
@@ -100,7 +100,7 @@ export const PostData = styled.div`
           content: "";
           width: 3rem;
           height: 100%;
-          background-color: #fff;
+          background-color: white;
           position: absolute;
           top: 0;
           left: -1.5rem;
@@ -185,19 +185,21 @@ export const ReadMore = styled.a`
 `;
 
 export const StyledContainer = styled.section`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   max-width: 100%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
 //   //padding: 40px 0;
-//   align-items: center;
+  align-items: center;
 `;
 
 export const StyledWrapper = styled.div`
     margin: auto:
     height: 350px;
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 400px 400px 400px;
+    // grid-template-rows: 400px 400px 400px;
     grid-gap: 25px;
 
     @media (max-width: 1200px) {

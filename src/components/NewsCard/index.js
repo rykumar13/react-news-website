@@ -41,14 +41,12 @@ const NewsCard = () => {
             <ImageData>
               <BackgroundImage />
               <PublicationDetails>
-                <Author href="#">
-                  {/* Author icon goes here */}
+                {/* <Author href="#">
                   {Website}
                 </Author>
                 <Date>
-                  {/* Date icon goes here */}
                   {"March 22"}
-                </Date>
+                </Date> */}
               </PublicationDetails>
             </ImageData>
             <PostData>

@@ -22,7 +22,7 @@ const Navbar = () => {
       <HeadingContainer>
         <HeadingName>
           <Title>THE DAILY ROUND UP</Title>
-          <SubTitle>LATEST HEADLINES FROM STUFF, SCOOP & RNZ</SubTitle>
+          {/* <SubTitle>LATEST HEADLINES FROM STUFF, SCOOP & RNZ</SubTitle> */}
         </HeadingName>
       </HeadingContainer>
       <NavListContainer1>

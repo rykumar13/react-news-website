@@ -16,19 +16,18 @@ export const MobileIcon = styled.div`
 `;
 
 export const HeadingContainer = styled.div`
-  padding: 40px;
 `;
 
 export const HeadingName = styled.div`
-display: flex;
-align-items: flex-end;
-justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
 `;
 
 export const StyledContainer = styled.div`
   background-color: #f55a3f;
-  height: 150px;
+  // height: 150px;
   @media (max-width: 63em) {
     padding: 0 40px;
   }
@@ -67,24 +66,22 @@ export const NavList1 = styled.ol`
   list-style-type: none;
   font-size: 14px;
   color: white;
-  padding: 7px;
 `;
 
 export const NavList2 = styled.ol`
   list-style-type: none;
   font-size: 18px;
-  padding: 12px;
   font-weight: 400;
 `;
 
 export const Title = styled.h1`
   color: #fff;
-  font-size: 5rem;
+  font-size: 40px;
   font-weight: 600;
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 600;
   color: white;
 `;

@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,11 +17,11 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   /* font-size: 1.6rem; */
-  color: #333;
-  background-color: #eee;
+  /* color: #333;
+  background-color: #eee; */
   /* width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; */
-  /* padding: 1.5rem; */
-}
+  justify-content: center;
+   padding: 1.5rem; 
+} */

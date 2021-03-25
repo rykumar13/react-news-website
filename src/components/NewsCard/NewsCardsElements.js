@@ -50,13 +50,13 @@ export const PublicationDetails = styled.div`
     rgba(255, 119, 48, 0.8),
     rgba(255, 185, 0, 0.8)
   );
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1rem;
+  padding: 5px;
   @media (min-width: 600px) {
       transform: translateY:(-100%);
       transition: transform .5s;
@@ -112,12 +112,12 @@ export const PostData = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 16px;
   line-height: 1;
 `;
 
 export const Description = styled.p`
-  font-size: 1.5rem;
+  font-size: 14px;
   position: relative;
   ::first-letter {
     margin-left: 1rem;
@@ -141,15 +141,15 @@ export const Description = styled.p`
 export const Cta = styled.div`
   text-align: right;
   font-weight: bold;
-  margin-top: 1rem;
+  // margin-top: 1rem;
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 1.25rem;
+  font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   color: #a2a2a2;
-  margin: 1rem 0 1.5rem 0;
+  // margin: 1rem 0 1.5rem 0;
 `;
 
 export const ReadMore = styled.a`
@@ -185,12 +185,11 @@ export const ReadMore = styled.a`
 `;
 
 export const StyledContainer = styled.section`
-  margin-top: 90px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-//   //padding: 40px 0;
   align-items: center;
 `;
 

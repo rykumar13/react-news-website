@@ -18,7 +18,6 @@ import {
 const Navbar = () => {
   return (
     <StyledContainer>
-      {/* <Strip /> */}
       <HeadingContainer>
         <HeadingName>
           <Title>THE DAILY ROUND UP</Title>

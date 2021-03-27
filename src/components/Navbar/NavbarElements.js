@@ -1,91 +1,82 @@
 import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
-export const MobileIcon = styled.div`
+export const Nav = styled.nav`
+  font-size: 18px;
+  background: #ec4438;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+  box-shadow: 0px 2px 10px grey;
+`;
+
+export const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  /* &.active {
+    color: #15cdfc;
+  } */
+`;
+
+export const Bars = styled(FaBars)`
   display: none;
+  color: #fff;
 
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
   }
 `;
 
-export const HeadingContainer = styled.div`
-`;
-
-export const HeadingName = styled.div`
+export const NavMenu = styled.div`
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
 
-`;
-
-export const StyledContainer = styled.div`
-  background-color: #f55a3f;
-  // height: 150px;
-  @media (max-width: 63em) {
-    padding: 0 40px;
-  }
-  @media (max-width: 48em) {
-    padding: 0 25px;
-  }
-  @media (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     display: none;
-    justify-content: center;
   }
 `;
 
-export const NavListContainer1 = styled.div`
+export const NavBtn = styled.nav`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: #ec4438;
-  font-weight: bold;
+  margin: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
-export const NavListContainer2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  border-bottom: 1px solid;
-`;
+export const NavBtnLink = styled(Link)`
+  color: #000;
+  border-radius: 4px;
+  background: #fff;
+  padding: 10px 22px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
-export const Strip = styled.div`
-  background-color: black;
-  padding: 9px;
-  max-width: 100%;
-`;
-
-export const NavList1 = styled.ol`
-  list-style-type: none;
-  font-size: 14px;
-  color: white;
-`;
-
-export const NavList2 = styled.ol`
-  list-style-type: none;
-  font-size: 18px;
-  font-weight: 400;
-`;
-
-export const Title = styled.h1`
-  color: #fff;
-  font-size: 40px;
-  font-weight: 600;
-`;
-
-export const SubTitle = styled.h2`
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-`;
-
-export const NavLink = styled.a`
-  margin-right: 60px;
+  margin-left: 24px;
+  
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    /* color: #010606; */
+  }
 `;

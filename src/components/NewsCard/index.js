@@ -40,18 +40,10 @@ const NewsCard = () => {
           <Card>
             <ImageData>
               <BackgroundImage />
-              <PublicationDetails>
-                {/* <Author href="#">
-                  {Website}
-                </Author>
-                <Date>
-                  {"March 22"}
-                </Date> */}
-              </PublicationDetails>
             </ImageData>
             <PostData>
               <Title>{Name}</Title>
-              <SubTitle>{Category}</SubTitle>
+              <SubTitle>{Website} - {Category}</SubTitle>
               <Description>
                 {Brief}
               </Description>

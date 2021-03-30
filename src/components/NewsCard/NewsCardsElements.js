@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img from "../sample_image.jpg";
 
 export const Card = styled.div`
   display: flex;
@@ -10,33 +9,31 @@ export const Card = styled.div`
     flex-direction: row;
     max-width: 75rem;
   }
+  :hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
 `;
 
 export const ImageData = styled.div`
-  height: 25rem;
+  height: 1rem;
   position: relative;
   z-index: 1;
   overflow: hidden;
 
   @media (min-width: 600px) {
-    flex-basis: 30%;
+    flex-basis: 20%;
     height: unset;
   }
 `;
 
 export const BackgroundImage = styled.div`
-  width: 85%;
+  width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  background: url(${img}) center no-repeat;
-  background-size: cover;
+  background-color: #ec4438;
   z-index: -1;
-  transition: transform 2s;
-  :hover {
-    transform: scale(1.2);
-  }
 `;
 
 export const PublicationDetails = styled.div`
@@ -67,39 +64,24 @@ export const Author = styled.a`
   :hover {
     color: rgba(255, 255, 255, 0.75);
   }
-  // @media (min-width: 600px) {
-  //   transform: translateY(-3rem);
-  //   opacity: 0;
-  //   transition-delay: .3s;
 `;
-
-export const FasFaUser = styled.i``;
 
 export const Date = styled.span`
   display: block;
-  // @media (min-width: 600px) {
-  //   transform: translateY(3rem);
-  //   opacity: 0;
-  //   transition: all .5s .3s;
-  // }
 `;
 
-export const FasFaCalendarAlt = styled.i``;
-
 export const PostData = styled.div`
-  // background-color: #fff;
   padding: 10px 30px;
   position: relative;
-  //width: 500px;
   @media (min-width: 600px) {
     ::before {
       content: "";
-      width: 30px;
+      width: 35px;
       height: 100%;
       background-color: white;
       position: absolute;
       top: 0;
-      left: -25px;
+      left: -20px;
       z-index: 10;
       transform: skewX(-5deg);
     }
@@ -115,29 +97,11 @@ export const Title = styled.h1`
 export const Description = styled.p`
   font-size: 14px;
   position: relative;
-  /* ::first-letter {
-    margin-left: 1rem;
-  } */
-  /* ::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 14px;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 119, 48, 0.8),
-      rgba(255, 185, 0, 0.8)
-    );
-    border-radius: 2rem;
-  } */
 `;
 
 export const Cta = styled.div`
   text-align: right;
   font-weight: bold;
-  // margin-top: 1rem;
 `;
 
 export const SubTitle = styled.h2`
@@ -145,7 +109,6 @@ export const SubTitle = styled.h2`
   font-weight: 400;
   text-transform: uppercase;
   color: #a2a2a2;
-  // margin: 1rem 0 1.5rem 0;
 `;
 
 export const ReadMore = styled.a`
@@ -183,10 +146,6 @@ export const ReadMore = styled.a`
 export const StyledContainer = styled.div`
   margin-top: 50px;
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* max-width: 100%; */
-  /* align-items: center; */
 `;
 
 export const StyledWrapper = styled.div`

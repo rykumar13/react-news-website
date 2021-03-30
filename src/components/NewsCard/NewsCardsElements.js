@@ -118,6 +118,7 @@ export const ReadMore = styled.a`
     rgba(255, 185, 0, 0.8)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   position: relative;
 

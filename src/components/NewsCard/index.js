@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { getMockData as getMockDataSet } from "../../data/mock_data";
+import { getData as getDataSet } from "../..//data/data"
 import {
   Card,
   ImageData,
@@ -20,30 +21,30 @@ import {
 } from "./NewsCardsElements";
 
 const NewsCard = () => {
-  const [currentMockData, setMockData] = useState(null);
+  const [currentData, setData] = useState(null);
 
   useEffect(() => {
-    const getMockData = async () => {
-      let mockData = await getMockDataSet();
-      if (mockData) return setMockData(mockData);
-      setMockData("no mock data found");
+    const getData = async () => {
+      let data = await getDataSet();
+      if (data) return setData(data);
+      setData("no mock data found");
     };
-    getMockData();
+    getData();
   }, []);
 
-  if (!currentMockData) return null;
+  if (!currentData) return null;
 
   return (
     <StyledContainer>
       <StyledWrapper>
-        {currentMockData.map(({ Url, Name, Brief, Website, Category }) => (
+        {currentData.map(({ Url, Date, Name, Brief, Website, Category }) => (
           <Card>
             <ImageData>
               <BackgroundImage />
             </ImageData>
             <PostData>
               <Title>{Name}</Title>
-              <SubTitle>{Website} - {Category}</SubTitle>
+              <SubTitle>{Website} / {Category} / {Date}</SubTitle>
               <Description>
                 {Brief}
               </Description>

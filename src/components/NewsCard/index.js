@@ -1,15 +1,9 @@
 import { React, useState, useEffect } from "react";
-import { getMockData as getMockDataSet } from "../../data/mock_data";
 import { getData as getDataSet } from "../..//data/data"
 import {
   Card,
   ImageData,
   BackgroundImage,
-  PublicationDetails,
-  Author,
-  FasFaUser,
-  Date,
-  FasFaCalendarAlt,
   PostData,
   Title,
   SubTitle,

@@ -1,16 +1,12 @@
 const fetch = require("node-fetch");
 let base64 = require("base-64");
 
-const baseURL = "http://35.176.138.183/";
-let username = "api_username";
-let password = "api_password";
+const baseURL = "https://dcoiul8283.execute-api.eu-west-2.amazonaws.com/dev";
+let username = "news_app_user";
+let password = "news_app_password";
 let headers = new fetch.Headers();
 
-//headers.append('Content-Type', 'text/json');
-headers.append(
-  "Authorization",
-  "Basic " + base64.encode(username + ":" + password)
-);
+headers.append("Authorization","Basic " + base64.encode(username + ":" + password));
 
 export const getData = async () => {
   let data = await fetch(`${baseURL}`, {
@@ -19,5 +15,5 @@ export const getData = async () => {
     headers: headers,
   });
   data = await data.json();
-  return JSON.parse(data);
+  return data;
 };

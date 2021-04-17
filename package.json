@@ -7,6 +7,9 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "base-64": "^1.0.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "flickr-client": "^0.0.4",
     "gzip": "^0.1.0",
     "mdbreact": "^5.0.1",
     "mysql": "^2.18.1",
@@ -43,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8100"
 }

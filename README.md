@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://daily-roundup.netlify.app/" target="_blank">react-news-site.app
+  <a href="https://daily-roundup.netlify.app/" target="_blank">daily-roundup.netlify.app
 </a>
 </h1>
 <p align="center">

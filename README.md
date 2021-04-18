@@ -21,9 +21,6 @@
   <div align="center">
 </div>
 </p>
-<h2 align="center">Demo</h2>
-<p align="center">
-  </p>
 <br>
 <h2>
 Technologies used

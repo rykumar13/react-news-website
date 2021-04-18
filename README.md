@@ -3,7 +3,7 @@
 </a>
 </h1>
 <p align="center">
-  The first iteration of <a href="https://daily-roundup.netlify.app/" target="_blank">react-news-site.app</a> built with <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">beautifulsoup4</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://daily-roundup.netlify.app/" target="_blank">react-news-site.app</a> built with <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">beautifulsoup4</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a> and AWS EC2, RDS & API Gateway.
 </p>
 <br>
 <div align="center">

@@ -5,13 +5,13 @@
 <p align="center">
   The first iteration of <a href="https://daily-roundup.netlify.app/" target="_blank">react-news-site.app</a> built with <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">beautifulsoup4</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
+<br>
 <div align="center">
   <img alt="Logo" src="https://github.com/rykumar13/react-news-website/blob/master/dailyRoundUp.gif" />
 </div>
 <br>
 <h2> How the website works</h2>
 <p align="center">
-  There are 4 components to this. 
   <ul>
   <li>A python script cron job runs every 15 mins that scrapes data from Stuff, RadioNZ & Scoop news websites. This is hosted on a AWS EC2 instance.</li>
   <li>This data is then inserted into a MySQL instance hosted on AWS RDS.</li>

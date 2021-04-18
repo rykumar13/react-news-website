@@ -18,13 +18,11 @@
   <li>There is Flask API setup using AWS API Gateway to expose this data to the client. This API supports HTTPS, Basic Auth & is CORS compliant.</li>
   <li>Finally there is the client built using React & Styled components.</li>
   </ul>
-  <div align="center">
   <br>
   <h2> Architecture Diagram</h2>
   <p align="center">
   <img alt="diagram" src="https://raw.githubusercontent.com/rykumar13/react-news-website/4f574629a632a87e3cc2d86c6d9c21c73ccb330b/diagrams/diagram.svg" />
     <p>
-</div>
 </p>
 <br>
 <h2>
